@@ -1,0 +1,55 @@
+<%- include ('_layouts/header') -%>
+
+<script>
+    $(document).ready(function(){
+      $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+      });
+      $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+      });
+      $("#flip3").click(function(){
+        $("#panel3").slideToggle("slow");
+      });
+    });
+    </script>
+
+<div class="container" >
+<div class="offset-md-3 col-md-6" style="align-items: center;">
+<h1 style="font-size: x-large;text-align: center;color: rgb(17, 68, 10);">How are we different?</h1>
+
+<div id="flip1" style="  padding: 10px;border: solid 1px #c3c3c3;border-radius: 6px;font-size: medium;cursor: pointer;" class="row">
+<div class="col-md-11">ONLY ORIGINAL BRANDS</div> <div class="col-md-1" style="text-align: center;"><span style="background-color: rgb(42, 104, 42);border-radius: 100%;color: white;"> <b>&nbsp;+&nbsp;</b></span></div></div>
+<div id="panel1" style="  padding: 10px;text-align: center;border: dashed 1px #c3c3c3;display: none;margin-top: auto;font-size: small;">
+    <div class="row">
+    <div class="col-md-6"><img src="/images/Cosmetics.jpg" alt="" width="160px"></div>
+        <div class="col-md-6" style="text-align: left;"> <br> <br>We think about our clients. We always want the best for you. We work with brands like Kylie Cosmetics, AVON , Dior so on.
+    </div></div>
+</div>
+
+<br>
+
+<div id="flip2" style="  padding: 10px;border: solid 1px #c3c3c3;border-radius: 6px;font-size: medium;cursor: pointer;" class="row">
+    <div class="col-md-11">FACT DELIVERY</div> <div class="col-md-1" style="text-align: center;"><span style="background-color: rgb(42, 104, 42);border-radius: 100%;color: white;"> <b>&nbsp;+&nbsp;</b></span></div></div>
+    <div id="panel2" style="  padding: 10px;text-align: center;border: dashed 1px #c3c3c3;display: none;margin-top: auto;font-size: small;">
+        <div class="row">
+            <div class="col-md-6"><img src="/images/fast.jpg" alt="" width="160px"></div>
+            <div class="col-md-6" style="text-align: inherit;"> <br><br> Fast delivery for our beauties. Your products are thick and safe, and most importantly, you will have it very quickly
+            </div></div>
+</div>
+
+<br>
+
+<div id="flip3" style="  padding: 10px;border: solid 1px #c3c3c3;border-radius: 6px;font-size: medium;cursor: pointer;" class="row">
+    <div class="col-md-11">PAYMENT METHOD</div> <div class="col-md-1" style="text-align: center;"><span style="background-color: rgb(42, 104, 42);border-radius: 100%;color: white;"> <b>&nbsp;+&nbsp;</b></span></div></div>
+    <div id="panel3" style="  padding: 10px;text-align: center;border: dashed 1px #c3c3c3;display: none;margin-top: auto;font-size: small;">
+        <div class="row">
+            <div class="col-md-6"><img src="/images/payment.jpg" alt="" width="160px"></div>
+            <div class="col-md-6" style="text-align: inherit;"> <br><br>  A convenient way to pay. Everything is so convenient that you want to order from us many more times.
+            </div></div>
+</div>
+<br>
+
+</div>
+</div>
+<%- include ('_layouts/footer') -%>
